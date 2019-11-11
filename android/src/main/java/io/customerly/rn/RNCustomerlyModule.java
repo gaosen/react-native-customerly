@@ -119,7 +119,7 @@ public class RNCustomerlyModule extends ReactContextBaseJavaModule {
      */
     @ReactMethod
     public void logoutUser() {
-        Customerly.logoutUser();
+        Customerly.logoutUser(null);
     }
 
     /**
