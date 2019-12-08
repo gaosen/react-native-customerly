@@ -11,6 +11,8 @@ buildscript {
 }
 
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 27
@@ -36,5 +38,7 @@ repositories {
 dependencies {
     implementation 'com.facebook.react:react-native:+'
     implementation 'io.customerly:customerly-android-sdk-supportlibraries:3.0.0'
+    compile "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
   
